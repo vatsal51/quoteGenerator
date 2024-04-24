@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-function RandomQuote({ user, quoteData, addToFav }) {
+function RandomQuote({ quoteData, addToFav }) {
   const handleAddToFav = () => {
     addToFav(quoteData);
     var x = document.getElementById("toast");
@@ -15,7 +14,18 @@ function RandomQuote({ user, quoteData, addToFav }) {
         <>
           <span id="toast">
             Added to favourite's
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" viewBox="0 0 60 60" xmlns:v="https://vecta.io/nano"><path d="M30 60C13.431 60 0 46.569 0 30S13.431 0 30 0s30 13.431 30 30-13.431 30-30 30zM13.014 36.765c-1.343-1.357-1.343-3.543 0-4.9l1.766-1.756c.607-.612 1.436-.952 2.298-.943s1.683.368 2.276.994l3.12 3.237a1.59 1.59 0 0 0 2.311 0l15.9-16.39c.597-.63 1.426-.989 2.294-.994s1.701.344 2.306.967L47 18.714c1.308 1.35 1.308 3.496 0 4.846L25.891 45.011c-.595.616-1.413.966-2.27.972s-1.679-.334-2.282-.942z" fill="#699f4c" fill-rule="evenodd"/></svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              viewBox="0 0 60 60"
+              xmlns:v="https://vecta.io/nano"
+            >
+              <path
+                d="M30 60C13.431 60 0 46.569 0 30S13.431 0 30 0s30 13.431 30 30-13.431 30-30 30zM13.014 36.765c-1.343-1.357-1.343-3.543 0-4.9l1.766-1.756c.607-.612 1.436-.952 2.298-.943s1.683.368 2.276.994l3.12 3.237a1.59 1.59 0 0 0 2.311 0l15.9-16.39c.597-.63 1.426-.989 2.294-.994s1.701.344 2.306.967L47 18.714c1.308 1.35 1.308 3.496 0 4.846L25.891 45.011c-.595.616-1.413.966-2.27.972s-1.679-.334-2.282-.942z"
+                fill="#699f4c"
+                fillRule="evenodd"
+              />
+            </svg>
           </span>
 
           <span

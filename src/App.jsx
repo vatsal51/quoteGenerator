@@ -19,7 +19,6 @@ function App() {
     setIsLoggedIn(true);
     fetchRandomQuote();
   };
-  console.log(user.name);
   const [quoteData, setQuoteData] = useState("");
 
   const fetchRandomQuote = () => {
@@ -42,7 +41,6 @@ function App() {
   };
 
   function addToFav(fav) {
-    // Check if the quote already exists in favorites
     if (!favorites.some((quote) => quote.quote === fav.quote)) {
       setFavorites((prev) => [...prev, fav]);
     }
@@ -76,11 +74,7 @@ function App() {
                 </span>{" "}
                 {user.name}
               </p>
-              <RandomQuote
-                user={user}
-                quoteData={quoteData}
-                addToFav={addToFav}
-              />
+              <RandomQuote quoteData={quoteData} addToFav={addToFav} />
               <div className="quote-footer">
                 <span
                   className="icon"
@@ -89,19 +83,12 @@ function App() {
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    width="20px"
-                    height="20px"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={1.5}
-                    stroke="currentColor"
-                    className="w-6 h-6"
+                    xmlns:v="https://vecta.io/nano"
+                    width="30px"
+                    height="30px"
+                    viewBox="0 0 90 100"
                   >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0Z"
-                    />
+                    <path d="M79 24a5 5 0 0 0-9.62-1.91 1.49 1.49 0 0 1-2.75 0A5 5 0 0 0 57 24c0 2.82 3.39 7.32 9.3 12.34a2.62 2.62 0 0 0 3.4 0C75.61 31.32 79 26.82 79 24zM67 74.9V50a3 3 0 0 0-3.3-3 3.12 3.12 0 0 0-2.7 3.17v24.59L49.54 63.29a7.83 7.83 0 0 0-11.07 0L27 74.76V28a3 3 0 0 1 3-3h12.83A3.12 3.12 0 0 0 46 22.3a3 3 0 0 0-3-3.3H30a9 9 0 0 0-9 9v46.9a6 6 0 0 0 5.7 6.1 5.82 5.82 0 0 0 4.3-1.71l13-13 13 13.05A5.76 5.76 0 0 0 61.3 81a6 6 0 0 0 5.7-6.1z" />
                   </svg>
                 </span>
                 <span
@@ -109,7 +96,6 @@ function App() {
                   title="Generate new quote's"
                   onClick={fetchRandomQuote}
                 >
-                  {" "}
                   <p className="quote-text">More Quotes</p>
                   <img className="rightArrow" src={rightArrow} />
                 </span>
@@ -119,7 +105,6 @@ function App() {
         )}
         <>
           <FavoriteQuotes
-            user={user}
             favorites={favorites}
             setFavorites={setFavorites}
             removeFromFav={removeFromFav}
