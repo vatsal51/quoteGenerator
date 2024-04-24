@@ -23,7 +23,7 @@ function Login({ onLogin }) {
      <h2 className='login-text'>Please log in to continue</h2>
      <input className="form-input" type="text" placeholder="Username" value={username} onChange={(e) => setUsername(e.target.value)} />
      <input className="form-input" type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} />
-     <button className='form-submit' type="submit">Login</button>
+     <button className='form-submit' type="submit" title="login">Login</button>
     </form>
    </div>
   </div>
