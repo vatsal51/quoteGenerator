@@ -10,13 +10,15 @@ This project is built using ReactJs and Axios for making API requests. It integr
 
 1. **User Authentication**: Users can log in using their credentials, and their login info is displayed on the top right corner. (Mock login data is used for now. Kindly use username as "baya" and password as "password".)
 
-2. **Get Random Quote**: Users can click a button to get a random quote as many times as they want.
+2. **Quote category**: User can select from range of quotes category to generate random quotes based on that category
 
-3. **Favorite Quote**: Users can favorite a random quote by clicking a button.
+3. **Get Random Quote**: Users can click a button, press the right arrow key on their keyboard, or swipe from right to left (on touch devices) to retrieve a random quote as many times as they desire.
 
-4. **Unfavorite Quote**: Users can unfavorite a previously favorited quote by clicking a button.
+4. **Favorite Quote**: Users can favorite a random quote by clicking a button.
 
-5. **Edit Quote**: Users can edit the text and author of a quote.
+5. **Unfavorite Quote**: Users can unfavorite a previously favorited quote by clicking a button.
+
+6. **Edit Quote**: Users can edit the text and author of a quote.
 
 ### Design and UI Components
 

@@ -16,8 +16,8 @@ function Login({ onLogin }) {
   };
 
   return (
-    <div className="login-card w100p">
-      <div className="rel inner-wrapy quote-wrapy clearfix glass container">
+    <div className=" w100p">
+      <div className="clearfix container">
         <img alt="bg" src={LoginBg} className="loginbg" />
         <form onSubmit={handleSubmit} className="login-form glass">
           <h2 className="login-text">Please log in to continue</h2>

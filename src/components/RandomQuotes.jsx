@@ -51,12 +51,12 @@ function RandomQuote({ quoteData, addToFav }) {
           </span>
           <div className="main-quote">
             <blockquote>
-              <p>
+              <p title="quote">
                 <span>“</span>
                 {quoteData.quote}
               </p>
             </blockquote>
-            <p>— {quoteData.author}</p>
+            <p title="quote author">— {quoteData.author}</p>
           </div>
         </>
       ) : (
